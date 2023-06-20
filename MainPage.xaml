@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hillel_Lesson27_HW_4.MainPage"
+             xmlns:viewmodel = "clr-namespace:Hillel_Lesson27_HW_4"
+             x:DataType="viewmodel:MainViewModel"
+             Title="Appka"
+             BackgroundColor="WhiteSmoke">
+
+        <Grid>
+
+
+        <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+            <Frame BorderColor="Black" CornerRadius="20" BackgroundColor="WhiteSmoke" WidthRequest="500" Margin="20">
+
+                <Entry Placeholder="0" Text="{Binding Number}" TextColor="Black" HorizontalTextAlignment="End" FontSize="50" MinimumWidthRequest="100" MinimumHeightRequest="100" Margin="20"></Entry>
+            </Frame>
+
+            <Frame BackgroundColor="WhiteSmoke" WidthRequest="500" CornerRadius="10" HeightRequest="100">
+               <Label Text="{Binding Result}" BackgroundColor="WhiteSmoke" TextColor ="Black" HorizontalTextAlignment="Center" FontSize="30" WidthRequest="400" HeightRequest="100" VerticalTextAlignment="Center"></Label>
+                </Frame>
+
+            
+                
+            <Button Text="Sin(x)" Command="{Binding CalculateSinX}" FontSize="50" TextColor="Black" BackgroundColor="#99a6bacc" HorizontalOptions="Center" BorderWidth="1" BorderColor="Black" WidthRequest="500" Margin="20"/>
+
+            <Button Text="Cos(x)" Command="{Binding CalculateCosX}" FontSize="50" TextColor="Black" BackgroundColor="#99a6bacc" HorizontalOptions="Center" BorderWidth="1" BorderColor="Black" WidthRequest="500" Margin="20"/>
+
+            <Button Text="x!" Command="{Binding CalculateXFactorial}" FontSize="50" TextColor="Black" BackgroundColor="#99a6bacc" HorizontalOptions="Center" BorderWidth="1" BorderColor="Black" WidthRequest="500" Margin="20"/>
+
+
+        </VerticalStackLayout>
+
+            </Grid>
+
+</ContentPage>
